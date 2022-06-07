@@ -45,10 +45,14 @@ public class Solution {
     }
     public static void main(String[] args) {
         Solution solution1 = new Solution();
+        Solution1 solution2 = new Solution1();
         Scanner scanner = new Scanner(System.in);
-        System.out.print("nhap chuoi can xu li:");
+        System.out.print("nhap chuoi can xu li: ");   
         String input = scanner.nextLine();
-        System.out.print(solution1.solution(input));
+        System.out.println(solution1.solution(input));
+        String[] A = {"ca","cb","de","dd"};
+        String[] B = {"0123","0234","0321","0432"};
+        System.out.print("Số liên lạc phù hợp: "+solution2.solution(A, B, input));
         scanner.close();
     }
 }
