@@ -31,8 +31,13 @@ public class Solution {
                 return 3;
             else return 4;
         }
-        if (res == 1 || res == 2) {
-            if (res==numChange) 
+        if (res == 1) {
+            if (numChange==2) 
+                return 2;
+            else return 3;
+        }
+        if (res == 2) {
+            if (numChange==1) 
                 return 2;
             else return 3;
         }
